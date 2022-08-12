@@ -1,6 +1,5 @@
 
 import './App.css';
- import Aboutus from './components/Aboutus';
 import Navbar from './components/Navbar';
 import Textarea from './components/Textarea'
 import Alert from './components/Alert'
@@ -49,13 +48,8 @@ function App() {
 
 <Alert alert={alert}/>
 
-      {/* <Aboutus/> */}
-      {/* <Textarea showalert={showalert} heading="Enter the text to analyze" mode={mode}/> */}
-
-
     <Routes>
-        <Route exact path="/Aboutus" element={<Aboutus mode={mode} />} />
-        <Route exact path="/Home" element={<Textarea showalert={showalert} heading="Enter the text to analyze" mode={mode}/>} />
+        <Route exact path="/" element={<Textarea showalert={showalert} heading="Enter the text to analyze" mode={mode}/>} />
         <Route exact path="/textutils" element={<Textarea showalert={showalert} heading="Enter the text to analyze" mode={mode}/>}  />
     </Routes>
     </div>
